@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Kohana_Session_Memcached extends Session {
+class Kohana_Session_Cache extends Session {
 
 	// _memcached instance
 	protected $_memcached;
