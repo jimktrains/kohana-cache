@@ -15,7 +15,7 @@ class Kohana_Session_Memcached extends Session {
 	{
 		if ( ! isset($config['group']))
 		{
-			$config['group'] = 'default';
+			$config['group'] = 'memcache';
 		}
 
 		$this->_db = Cache::instance($config['group']);
