@@ -53,7 +53,7 @@ class Kohana_Session_Cache extends Session {
 
 			$ret = $this->_db->get($id);	
 		}
-		while ($ret !== false);
+		while (! is_null($ret));
 
 		return $this->_session_id = $id;
 	}
